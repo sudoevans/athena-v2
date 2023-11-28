@@ -40,7 +40,7 @@ function start(client) {
       // If it's not a group message, reply
       if (!isGroupMessage) {
         const response = await generateResponse(message.body); //Making sure the message is not from group before sending a response.
-        await client.startTyping(message.from); //Simulating typing action.
+        await client.simulateTyping(message.from); //Simulating typing action.
         await client.sendText(message.from, response);
       }
     } catch (error) {
