@@ -1,9 +1,16 @@
-// FILEPATH: /c:/Users/snave/OneDrive/Desktop/Projects/Whatsapp Bot-Bard/Bot/index.test.js
-const wa = require('@open-wa/wa-automate');
-const { default: PQueue } = require("p-queue");
-const generateResponse = require('./bard');
-const { start } = require('./index'); // Assuming start is exported
+const assert = require('chai').assert;
+const index = require('./index.js');
 
-jest.mock('@open-wa/wa-automate');
-jest.mock('p-queue');
-jest.mock('./bard');
+describe('Imports Test', function() {
+  it('should import @open-wa/wa-automate', function() {
+    assert.isDefined(index.wa);
+  });
+
+  it('should import p-queue', function() {
+    assert.isDefined(index.PQueue);
+  });
+
+  it('should import ./bard', function() {
+    assert.isDefined(index.generateResponse);
+  });
+});

@@ -69,5 +69,9 @@ function start(client) {
   //     }
   //   });
   // }
-
+  module.exports = {
+    wa,
+    PQueue,
+    generateResponse
+  };
 
