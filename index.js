@@ -8,7 +8,7 @@ const queue = new PQueue({ concurrency: 1,
 autoStart:false});
 
 wa.create({
-  sessionId: "COVID_HELPER",
+  sessionId: "BARD_SESSION",
   multiDevice: true, //required to enable multiDevice support
   authTimeout: 60, //wait only 60 seconds to get a connection with the host account device
   blockCrashLogs: true,
