@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "index.js"
   },
   "keywords": [],
@@ -12,6 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "@google-ai/generativelanguage": "^1.1.0",
+    "@open-wa/wa-automate": "^4.66.3",
     "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

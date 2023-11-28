@@ -2,3 +2,9 @@
 COVID_HELPER.data.json
 _IGNORE_COVID_HELPER/ 
 package-lock.json
+
+# managed
+**.data.json
+**.node-persist**
+**_IGNORE_**
+# end managed
